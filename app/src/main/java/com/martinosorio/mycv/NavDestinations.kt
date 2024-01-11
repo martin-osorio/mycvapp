@@ -8,5 +8,5 @@ enum class NavDestinations(val destination: String) {
     EducationScreen("EducationScreen"),
     SkillsScreen("SkillsScreen"),
     ContactScreen("ContactScreen"),
-    LinksScreen("LinksScreen"),
+    ResourcesScreen("LinksScreen"),
 }

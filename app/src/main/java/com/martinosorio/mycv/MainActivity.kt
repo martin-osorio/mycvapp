@@ -12,7 +12,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.martinosorio.mycv.ui.ContactScreen
+import com.martinosorio.mycv.ui.EducationScreen
+import com.martinosorio.mycv.ui.ExperienceScreen
+import com.martinosorio.mycv.ui.ExperiencesScreen
+import com.martinosorio.mycv.ui.ResourcesScreen
 import com.martinosorio.mycv.ui.ScreenTitle
+import com.martinosorio.mycv.ui.SkillsScreen
 import com.martinosorio.mycv.ui.SplashScreen
 import com.martinosorio.mycv.ui.SummaryScreen
 import com.martinosorio.mycv.ui.theme.MyCVTheme
@@ -42,27 +48,27 @@ class MainActivity : ComponentActivity() {
                         }
 
                         composable(NavDestinations.ExperiencesScreen.destination) {
-                            // TODO: Implement
+                            ExperiencesScreen(navController = navController)
                         }
 
                         composable(NavDestinations.ExperienceScreen.destination) {
-                            // TODO: Implement
+                            ExperienceScreen(navController = navController)
                         }
 
                         composable(NavDestinations.EducationScreen.destination) {
-                            // TODO: Implement
+                            EducationScreen(navController = navController)
                         }
 
                         composable(NavDestinations.SkillsScreen.destination) {
-                            // TODO: Implement
+                            SkillsScreen(navController = navController)
                         }
 
                         composable(NavDestinations.ContactScreen.destination) {
-                            // TODO: Implement
+                            ContactScreen(navController = navController)
                         }
 
-                        composable(NavDestinations.LinksScreen.destination) {
-                            // TODO: Implement
+                        composable(NavDestinations.ResourcesScreen.destination) {
+                            ResourcesScreen(navController = navController)
                         }
                     }
                 }
