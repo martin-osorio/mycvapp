@@ -23,7 +23,7 @@ fun ContactScreen(
                 .fillMaxSize()
                 .padding(all = 10.dp)
         ) {
-            ScreenTitle("Contact Screen")
+            TitleText("Contact Screen")
         }
     }
 }

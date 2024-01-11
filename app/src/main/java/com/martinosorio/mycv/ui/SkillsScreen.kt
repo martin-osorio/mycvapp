@@ -23,7 +23,7 @@ fun SkillsScreen(
                 .fillMaxSize()
                 .padding(all = 10.dp)
         ) {
-            ScreenTitle("Skills Screen")
+            TitleText("Skills Screen")
         }
     }
 }

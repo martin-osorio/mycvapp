@@ -23,7 +23,7 @@ fun ExperienceScreen(
                 .fillMaxSize()
                 .padding(all = 10.dp)
         ) {
-            ScreenTitle("Experience Screen")
+            TitleText("Experience Screen")
         }
     }
 }

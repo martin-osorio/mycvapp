@@ -23,7 +23,7 @@ fun EducationScreen(
                 .fillMaxSize()
                 .padding(all = 10.dp)
         ) {
-            ScreenTitle("Education Screen")
+            TitleText("Education Screen")
         }
     }
 }

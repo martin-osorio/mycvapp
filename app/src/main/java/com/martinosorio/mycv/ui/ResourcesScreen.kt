@@ -23,7 +23,7 @@ fun ResourcesScreen(
                 .fillMaxSize()
                 .padding(all = 10.dp)
         ) {
-            ScreenTitle("Resources Screen")
+            TitleText("Resources Screen")
         }
     }
 }

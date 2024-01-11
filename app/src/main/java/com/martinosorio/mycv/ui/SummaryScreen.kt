@@ -23,7 +23,7 @@ fun SummaryScreen(
                 .fillMaxSize()
                 .padding(all = 10.dp)
         ) {
-            ScreenTitle("Summary Screen")
+            TitleText("Summary Screen")
         }
     }
 }

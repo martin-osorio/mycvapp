@@ -17,10 +17,10 @@ import com.martinosorio.mycv.ui.EducationScreen
 import com.martinosorio.mycv.ui.ExperienceScreen
 import com.martinosorio.mycv.ui.ExperiencesScreen
 import com.martinosorio.mycv.ui.ResourcesScreen
-import com.martinosorio.mycv.ui.ScreenTitle
 import com.martinosorio.mycv.ui.SkillsScreen
 import com.martinosorio.mycv.ui.SplashScreen
 import com.martinosorio.mycv.ui.SummaryScreen
+import com.martinosorio.mycv.ui.TitleText
 import com.martinosorio.mycv.ui.theme.MyCVTheme
 
 class MainActivity : ComponentActivity() {
@@ -81,6 +81,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun GreetingPreview() {
     MyCVTheme {
-        ScreenTitle("Android")
+        TitleText("Android")
     }
 }
