@@ -10,31 +10,67 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import com.martinosorio.mycv.ui.theme.MyCVTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContent {
             MyCVTheme {
-                // A surface container using the 'background' color from the theme
+                val navController = rememberNavController()
+
+                NavHost(
+                    navController = navController,
+                    startDestination = NavDestinations.SplashScreen.destination
+                ){
+                    composable(NavDestinations.SplashScreen.destination) {
+                        // TODO: Implement
+                    }
+
+                    composable(NavDestinations.SummaryScreen.destination) {
+                        // TODO: Implement
+                    }
+
+                    composable(NavDestinations.ExperiencesScreen.destination) {
+                        // TODO: Implement
+                    }
+
+                    composable(NavDestinations.ExperienceScreen.destination) {
+                        // TODO: Implement
+                    }
+
+                    composable(NavDestinations.EducationScreen.destination) {
+                        // TODO: Implement
+                    }
+
+                    composable(NavDestinations.SkillsScreen.destination) {
+                        // TODO: Implement
+                    }
+
+                    composable(NavDestinations.ContactScreen.destination) {
+                        // TODO: Implement
+                    }
+
+                    composable(NavDestinations.LinksScreen.destination) {
+                        // TODO: Implement
+                    }
+                }
+
+                /*
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
                     Greeting("Android")
                 }
+                 */
             }
         }
     }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
 }
 
 @Preview(showBackground = true)
