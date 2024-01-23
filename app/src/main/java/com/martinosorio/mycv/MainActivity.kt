@@ -13,6 +13,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.martinosorio.mycv.ui.ContactScreen
+import com.martinosorio.mycv.ui.ContentsScreen
 import com.martinosorio.mycv.ui.EducationScreen
 import com.martinosorio.mycv.ui.ExperienceScreen
 import com.martinosorio.mycv.ui.ExperiencesScreen
@@ -45,6 +46,10 @@ class MainActivity : ComponentActivity() {
 
                         composable(NavDestinations.SummaryScreen.destination) {
                             SummaryScreen(navController = navController)
+                        }
+
+                        composable(NavDestinations.ContentsScreen.destination) {
+                            ContentsScreen(navController = navController)
                         }
 
                         composable(NavDestinations.ExperiencesScreen.destination) {
