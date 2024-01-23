@@ -14,8 +14,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.martinosorio.mycv.NavDestinations
 import com.martinosorio.mycv.R
@@ -40,28 +44,44 @@ fun SplashScreen(
                 modifier = Modifier
                     .fillMaxWidth()
                     .align(Alignment.TopCenter)
-                    .padding(top = 50.dp)
+                    .padding(top = 30.dp)
             ) {
                 Text(
-                    text = "My CV",
+                    text = "My C.V.",
                     modifier = Modifier.fillMaxWidth(),
                     textAlign = TextAlign.Center,
-                    style = MaterialTheme.typography.displayLarge
+                    style = TextStyle(
+                        fontFamily = FontFamily.Serif,
+                        fontWeight = FontWeight.Normal,
+                        fontSize = 60.sp,
+                        lineHeight = 24.sp,
+                        letterSpacing = 1.sp
+                    )
                 )
 
                 Text(
-                    text = "(WIP)",
+                    text = "Martin Osorio",
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(top = 24.dp),
+                    textAlign = TextAlign.Center,
+                    style = MaterialTheme.typography.displayMedium
+                )
+
+                Text(
+                    text = "Senior Android Developer",
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(top = 8.dp),
                     textAlign = TextAlign.Center,
-                    style = MaterialTheme.typography.bodyMedium
+                    style = MaterialTheme.typography.titleLarge
                 )
             }
 
             Image(
                 modifier = Modifier
                     .align(Alignment.Center)
+                    .padding(top = 30.dp)
                     .size(100.dp),
                 painter = painterResource(id = R.mipmap.ic_launcher_temp),
                 contentDescription = "My CV App Icon"

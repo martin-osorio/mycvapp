@@ -43,17 +43,27 @@ fun ContentsScreen(
                     .padding(top = 30.dp, start = 8.dp, end = 8.dp)
             ) {
                 Text(
+                    text = "Martin Osorio",
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(bottom = 12.dp),
+                    textAlign = TextAlign.Center,
+                    style = MaterialTheme.typography.displayLarge
+                )
+
+                Text(
                     text = "CV Contents",
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(bottom = 20.dp),
                     textAlign = TextAlign.Center,
-                    style = MaterialTheme.typography.displayLarge
+                    style = MaterialTheme.typography.headlineLarge
                 )
 
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()
+                        .padding(bottom = 12.dp)
                         .border(width = 2.dp, color = Color.LightGray, shape = RoundedCornerShape(8.dp))
                         .clickable {
                             navController.navigate(NavDestinations.SummaryScreen.destination)
@@ -62,6 +72,131 @@ fun ContentsScreen(
                 ) {
                     Text(
                         text = "Summary",
+                        modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, start = 16.dp),
+                        textAlign = TextAlign.Start,
+                        style = MaterialTheme.typography.headlineMedium
+                    )
+
+                    Text(
+                        text = ">",
+                        modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, end = 16.dp),
+                        textAlign = TextAlign.End,
+                        style = MaterialTheme.typography.headlineMedium
+                    )
+                }
+
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(bottom = 12.dp)
+                        .border(width = 2.dp, color = Color.LightGray, shape = RoundedCornerShape(8.dp))
+                        .clickable {
+                            navController.navigate(NavDestinations.ExperienceScreen.destination)
+                        },
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                ) {
+                    Text(
+                        text = "Experience",
+                        modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, start = 16.dp),
+                        textAlign = TextAlign.Start,
+                        style = MaterialTheme.typography.headlineMedium
+                    )
+
+                    Text(
+                        text = ">",
+                        modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, end = 16.dp),
+                        textAlign = TextAlign.End,
+                        style = MaterialTheme.typography.headlineMedium
+                    )
+                }
+
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(bottom = 12.dp)
+                        .border(width = 2.dp, color = Color.LightGray, shape = RoundedCornerShape(8.dp))
+                        .clickable {
+                            navController.navigate(NavDestinations.EducationScreen.destination)
+                        },
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                ) {
+                    Text(
+                        text = "Education",
+                        modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, start = 16.dp),
+                        textAlign = TextAlign.Start,
+                        style = MaterialTheme.typography.headlineMedium
+                    )
+
+                    Text(
+                        text = ">",
+                        modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, end = 16.dp),
+                        textAlign = TextAlign.End,
+                        style = MaterialTheme.typography.headlineMedium
+                    )
+                }
+
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(bottom = 12.dp)
+                        .border(width = 2.dp, color = Color.LightGray, shape = RoundedCornerShape(8.dp))
+                        .clickable {
+                            navController.navigate(NavDestinations.SkillsScreen.destination)
+                        },
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                ) {
+                    Text(
+                        text = "Skills",
+                        modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, start = 16.dp),
+                        textAlign = TextAlign.Start,
+                        style = MaterialTheme.typography.headlineMedium
+                    )
+
+                    Text(
+                        text = ">",
+                        modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, end = 16.dp),
+                        textAlign = TextAlign.End,
+                        style = MaterialTheme.typography.headlineMedium
+                    )
+                }
+
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(bottom = 12.dp)
+                        .border(width = 2.dp, color = Color.LightGray, shape = RoundedCornerShape(8.dp))
+                        .clickable {
+                            navController.navigate(NavDestinations.ContactScreen.destination)
+                        },
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                ) {
+                    Text(
+                        text = "Contact",
+                        modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, start = 16.dp),
+                        textAlign = TextAlign.Start,
+                        style = MaterialTheme.typography.headlineMedium
+                    )
+
+                    Text(
+                        text = ">",
+                        modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, end = 16.dp),
+                        textAlign = TextAlign.End,
+                        style = MaterialTheme.typography.headlineMedium
+                    )
+                }
+
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(bottom = 12.dp)
+                        .border(width = 2.dp, color = Color.LightGray, shape = RoundedCornerShape(8.dp))
+                        .clickable {
+                            navController.navigate(NavDestinations.ResourcesScreen.destination)
+                        },
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                ) {
+                    Text(
+                        text = "Resources",
                         modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, start = 16.dp),
                         textAlign = TextAlign.Start,
                         style = MaterialTheme.typography.headlineMedium
