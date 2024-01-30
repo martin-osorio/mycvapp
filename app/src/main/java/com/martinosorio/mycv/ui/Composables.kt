@@ -9,6 +9,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 
+@Deprecated("Replace me")
 @Composable
 fun TitleText(title: String) {
     Text(
@@ -18,5 +19,29 @@ fun TitleText(title: String) {
             .padding(top = 30.dp, bottom = 10.dp),
         textAlign = TextAlign.Center,
         style = MaterialTheme.typography.titleLarge
+    )
+}
+
+@Composable
+fun ScreenTitle(text: String) {
+    Text(
+        text = text,
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(top = 40.dp),
+        textAlign = TextAlign.Center,
+        style = MaterialTheme.typography.displayLarge
+    )
+}
+
+@Composable
+fun ScreenSubTitle(text: String) {
+    Text(
+        text = text,
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(top = 12.dp, bottom = 20.dp),
+        textAlign = TextAlign.Center,
+        style = MaterialTheme.typography.headlineMedium
     )
 }

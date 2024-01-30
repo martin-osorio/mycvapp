@@ -35,32 +35,15 @@ fun ContentsScreen(
         Box(
             modifier = Modifier
                 .fillMaxSize()
-                .fillMaxWidth()
-                .padding(all = 10.dp)
         ) {
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
                     .align(Alignment.TopCenter)
-                    .padding(top = 30.dp, start = 8.dp, end = 8.dp)
+                    .padding(start = 18.dp, end = 18.dp)
             ) {
-                Text(
-                    text = stringResource(R.string.martin_osorio),
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(bottom = 12.dp),
-                    textAlign = TextAlign.Center,
-                    style = MaterialTheme.typography.displayLarge
-                )
-
-                Text(
-                    text = stringResource(R.string.contents_title),
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(bottom = 20.dp),
-                    textAlign = TextAlign.Center,
-                    style = MaterialTheme.typography.headlineLarge
-                )
+                ScreenTitle(text = stringResource(R.string.martin_osorio))
+                ScreenSubTitle(text = stringResource(R.string.contents_title))
 
                 Row(
                     modifier = Modifier

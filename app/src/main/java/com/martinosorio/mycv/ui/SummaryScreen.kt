@@ -49,23 +49,8 @@ fun SummaryScreen(
                     .padding(start = 18.dp, end = 18.dp)
                     .verticalScroll(rememberScrollState())
             ) {
-                Text(
-                    text = stringResource(R.string.martin_osorio),
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(top = 40.dp),
-                    textAlign = TextAlign.Center,
-                    style = MaterialTheme.typography.displayLarge
-                )
-
-                Text(
-                    text = stringResource(R.string.senior_android_developer),
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(top = 12.dp, bottom = 20.dp),
-                    textAlign = TextAlign.Center,
-                    style = MaterialTheme.typography.headlineMedium
-                )
+                ScreenTitle(text = stringResource(R.string.martin_osorio))
+                ScreenSubTitle(text = stringResource(R.string.senior_android_developer))
 
                 Column(
                     modifier = Modifier
