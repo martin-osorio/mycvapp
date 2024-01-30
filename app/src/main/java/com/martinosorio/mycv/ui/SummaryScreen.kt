@@ -6,7 +6,9 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -38,19 +40,20 @@ fun SummaryScreen(
         }
     ) {
         Box(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(all = 10.dp)
+            modifier = Modifier.fillMaxSize()
         ) {
             Column(
                 modifier = Modifier
-                    .fillMaxWidth()
+                    .fillMaxSize()
                     .align(Alignment.TopCenter)
-                    .padding(top = 30.dp, start = 8.dp, end = 8.dp)
+                    .padding(start = 18.dp, end = 18.dp)
+                    .verticalScroll(rememberScrollState())
             ) {
                 Text(
                     text = stringResource(R.string.martin_osorio),
-                    modifier = Modifier.fillMaxWidth(),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(top = 40.dp),
                     textAlign = TextAlign.Center,
                     style = MaterialTheme.typography.displayLarge
                 )
@@ -59,7 +62,7 @@ fun SummaryScreen(
                     text = stringResource(R.string.senior_android_developer),
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(top = 12.dp, bottom = 30.dp),
+                        .padding(top = 12.dp, bottom = 20.dp),
                     textAlign = TextAlign.Center,
                     style = MaterialTheme.typography.headlineMedium
                 )
@@ -74,7 +77,7 @@ fun SummaryScreen(
                         text = stringResource(R.string.summary_subtitle),
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(top = 10.dp, bottom = 16.dp),
+                            .padding(top = 10.dp, bottom = 14.dp),
                         textAlign = TextAlign.Center,
                         style = TextStyle(
                             fontFamily = FontFamily.Default,
@@ -90,22 +93,21 @@ fun SummaryScreen(
                         text = stringResource(R.string.martin_summary),
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(start = 10.dp, end = 10.dp, bottom = 14.dp),
+                            .padding(start = 12.dp, end = 12.dp, bottom = 14.dp),
                         textAlign = TextAlign.Center,
                         style = MaterialTheme.typography.bodyLarge
                     )
                 }
-            }
 
-            Text(
-                text = stringResource(R.string.tap_anywhere_to_continue),
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .align(Alignment.BottomCenter)
-                    .padding(bottom = 30.dp),
-                textAlign = TextAlign.Center,
-                style = MaterialTheme.typography.bodyMedium
-            )
+                Text(
+                    text = stringResource(R.string.tap_anywhere_to_continue),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(bottom = 40.dp, top = 30.dp),
+                    textAlign = TextAlign.Center,
+                    style = MaterialTheme.typography.bodyMedium
+                )
+            }
         }
     }
 }
