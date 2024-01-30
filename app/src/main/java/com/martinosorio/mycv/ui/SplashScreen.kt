@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
@@ -47,7 +48,7 @@ fun SplashScreen(
                     .padding(top = 30.dp)
             ) {
                 Text(
-                    text = "My C.V.",
+                    text = stringResource(R.string.splash_screen_title),
                     modifier = Modifier.fillMaxWidth(),
                     textAlign = TextAlign.Center,
                     style = TextStyle(
@@ -60,7 +61,7 @@ fun SplashScreen(
                 )
 
                 Text(
-                    text = "Martin Osorio",
+                    text = stringResource(R.string.martin_osorio),
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(top = 24.dp),
@@ -69,7 +70,7 @@ fun SplashScreen(
                 )
 
                 Text(
-                    text = "Senior Android Developer",
+                    text = stringResource(R.string.senior_android_developer),
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(top = 8.dp),
@@ -84,11 +85,11 @@ fun SplashScreen(
                     .padding(top = 30.dp)
                     .size(100.dp),
                 painter = painterResource(id = R.mipmap.ic_launcher_temp),
-                contentDescription = "My CV App Icon"
+                contentDescription = stringResource(R.string.my_cv_app_icon_cd)
             )
 
             Text(
-                text = "Tap anywhere to continue",
+                text = stringResource(R.string.tap_anywhere_to_continue),
                 modifier = Modifier
                     .fillMaxWidth()
                     .align(Alignment.BottomCenter)

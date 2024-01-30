@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
@@ -23,6 +24,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.martinosorio.mycv.NavDestinations
+import com.martinosorio.mycv.R
 
 @Composable
 fun SummaryScreen(
@@ -47,14 +49,14 @@ fun SummaryScreen(
                     .padding(top = 30.dp, start = 8.dp, end = 8.dp)
             ) {
                 Text(
-                    text = "Martin Osorio",
+                    text = stringResource(R.string.martin_osorio),
                     modifier = Modifier.fillMaxWidth(),
                     textAlign = TextAlign.Center,
                     style = MaterialTheme.typography.displayLarge
                 )
 
                 Text(
-                    text = "Senior Android Developer",
+                    text = stringResource(R.string.senior_android_developer),
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(top = 12.dp, bottom = 30.dp),
@@ -69,7 +71,7 @@ fun SummaryScreen(
                         .border(width = 2.dp, color = Color.LightGray, shape = RoundedCornerShape(8.dp))
                 ) {
                     Text(
-                        text = "Who am I?",
+                        text = stringResource(R.string.summary_subtitle),
                         modifier = Modifier
                             .fillMaxWidth()
                             .padding(top = 10.dp, bottom = 16.dp),
@@ -85,7 +87,7 @@ fun SummaryScreen(
                     )
 
                     Text(
-                        text = "A results-oriented Senior Android Developer with 9 years of experience in agile Android development and a total of 11 years in the software development industry. Proven track record of leading high-impact projects, collaborating with cross-functional teams as well as working independently, and consistently delivering innovative solutions. Experienced in interviewing candidates and onboarding new team members. A self-motivated problem-solver with a strong passion for continuous learning and a global perspective as a digital nomad.",
+                        text = stringResource(R.string.martin_summary),
                         modifier = Modifier
                             .fillMaxWidth()
                             .padding(start = 10.dp, end = 10.dp, bottom = 14.dp),
@@ -96,7 +98,7 @@ fun SummaryScreen(
             }
 
             Text(
-                text = "Tap anywhere to continue",
+                text = stringResource(R.string.tap_anywhere_to_continue),
                 modifier = Modifier
                     .fillMaxWidth()
                     .align(Alignment.BottomCenter)

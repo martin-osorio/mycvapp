@@ -17,10 +17,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.martinosorio.mycv.NavDestinations
+import com.martinosorio.mycv.R
 
 @Composable
 fun ContentsScreen(
@@ -43,7 +45,7 @@ fun ContentsScreen(
                     .padding(top = 30.dp, start = 8.dp, end = 8.dp)
             ) {
                 Text(
-                    text = "Martin Osorio",
+                    text = stringResource(R.string.martin_osorio),
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(bottom = 12.dp),
@@ -52,7 +54,7 @@ fun ContentsScreen(
                 )
 
                 Text(
-                    text = "CV Contents",
+                    text = stringResource(R.string.contents_title),
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(bottom = 20.dp),
@@ -71,14 +73,14 @@ fun ContentsScreen(
                     horizontalArrangement = Arrangement.SpaceBetween,
                 ) {
                     Text(
-                        text = "Summary",
+                        text = stringResource(R.string.contents_subtitle),
                         modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, start = 16.dp),
                         textAlign = TextAlign.Start,
                         style = MaterialTheme.typography.headlineMedium
                     )
 
                     Text(
-                        text = ">",
+                        text = stringResource(R.string.right_carret),   // TODO: Replace with icon
                         modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, end = 16.dp),
                         textAlign = TextAlign.End,
                         style = MaterialTheme.typography.headlineMedium
@@ -96,14 +98,14 @@ fun ContentsScreen(
                     horizontalArrangement = Arrangement.SpaceBetween,
                 ) {
                     Text(
-                        text = "Experience",
+                        text = stringResource(R.string.experience),
                         modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, start = 16.dp),
                         textAlign = TextAlign.Start,
                         style = MaterialTheme.typography.headlineMedium
                     )
 
                     Text(
-                        text = ">",
+                        text = stringResource(R.string.right_carret),   // TODO: Replace with icon
                         modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, end = 16.dp),
                         textAlign = TextAlign.End,
                         style = MaterialTheme.typography.headlineMedium
@@ -121,14 +123,14 @@ fun ContentsScreen(
                     horizontalArrangement = Arrangement.SpaceBetween,
                 ) {
                     Text(
-                        text = "Education",
+                        text = stringResource(R.string.education),
                         modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, start = 16.dp),
                         textAlign = TextAlign.Start,
                         style = MaterialTheme.typography.headlineMedium
                     )
 
                     Text(
-                        text = ">",
+                        text = stringResource(R.string.right_carret),   // TODO: Replace with icon
                         modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, end = 16.dp),
                         textAlign = TextAlign.End,
                         style = MaterialTheme.typography.headlineMedium
@@ -146,14 +148,14 @@ fun ContentsScreen(
                     horizontalArrangement = Arrangement.SpaceBetween,
                 ) {
                     Text(
-                        text = "Skills",
+                        text = stringResource(R.string.skills),
                         modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, start = 16.dp),
                         textAlign = TextAlign.Start,
                         style = MaterialTheme.typography.headlineMedium
                     )
 
                     Text(
-                        text = ">",
+                        text = stringResource(R.string.right_carret),   // TODO: Replace with icon
                         modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, end = 16.dp),
                         textAlign = TextAlign.End,
                         style = MaterialTheme.typography.headlineMedium
@@ -171,14 +173,14 @@ fun ContentsScreen(
                     horizontalArrangement = Arrangement.SpaceBetween,
                 ) {
                     Text(
-                        text = "Contact",
+                        text = stringResource(R.string.contact),
                         modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, start = 16.dp),
                         textAlign = TextAlign.Start,
                         style = MaterialTheme.typography.headlineMedium
                     )
 
                     Text(
-                        text = ">",
+                        text = stringResource(R.string.right_carret),   // TODO: Replace with icon
                         modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, end = 16.dp),
                         textAlign = TextAlign.End,
                         style = MaterialTheme.typography.headlineMedium
@@ -196,14 +198,14 @@ fun ContentsScreen(
                     horizontalArrangement = Arrangement.SpaceBetween,
                 ) {
                     Text(
-                        text = "Resources",
+                        text = stringResource(R.string.resources),
                         modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, start = 16.dp),
                         textAlign = TextAlign.Start,
                         style = MaterialTheme.typography.headlineMedium
                     )
 
                     Text(
-                        text = ">",
+                        text = stringResource(R.string.right_carret),   // TODO: Replace with icon
                         modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, end = 16.dp),
                         textAlign = TextAlign.End,
                         style = MaterialTheme.typography.headlineMedium

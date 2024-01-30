@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">My CV</string>
+
+    <string name="martin_summary">Results-driven Senior Android Developer with over 7 years of experience, extensive expertise in programming languages such as Kotlin, Java, and C++, and a strong background in development using Jetpack, Compose, and various APIs. Demonstrated leadership in spearheading the design and development of innovative applications, including a Bluetooth communication management app and a Wearable app for blood-analyte sensors. Proven ability to work independently and collaboratively, driving projects from conception to successful implementation. Adept at optimizing performance, integrating cutting-edge features, and ensuring consistency across platforms. Holds a Certified Scrum Master certification and has a track record of successful remote work as a digital nomad. Previous experience includes impactful roles at Abbott, CVS Health, Charles Schwab, and Microsoft, contributing significantly to major app features, redesigns, and the transition to remote work arrangements. Holds a Bachelor of Science in Computer Science from Florida State University.</string>
+    <string name="splash_screen_title">My C.V.</string>
+    <string name="martin_osorio">Martin Osorio</string>
+    <string name="senior_android_developer">Senior Android Developer</string>
+    <string name="my_cv_app_icon_cd">My CV App Icon</string>
+    <string name="tap_anywhere_to_continue">Tap anywhere to continue</string>
+    <string name="summary_subtitle">Who am I?</string>
+    <string name="contents_title">CV Contents</string>
+    <string name="contents_subtitle">Summary</string>
+    <string name="right_carret"><![CDATA[>]]></string>
+    <string name="experience">Experience</string>
+    <string name="education">Education</string>
+    <string name="skills">Skills</string>
+    <string name="contact">Contact</string>
+    <string name="resources">Resources</string>
 </resources>
