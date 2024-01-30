@@ -18,34 +18,28 @@ import com.martinosorio.mycv.NavDestinations
 import com.martinosorio.mycv.R
 
 @Composable
-fun ExperienceScreen(
+fun ExperienceDetailScreen(
     navController: NavController,
 ) {
     Surface(
+        modifier = Modifier.fillMaxSize(),
+        color = MaterialTheme.colorScheme.background,
         onClick = {
-
+            navController.navigate(NavDestinations.ContentsScreen.destination)
         }
     ) {
-        Surface(
-            modifier = Modifier.fillMaxSize(),
-            color = MaterialTheme.colorScheme.background,
-            onClick = {
-                navController.navigate(NavDestinations.ContentsScreen.destination)
-            }
+        Box(
+            modifier = Modifier.fillMaxSize()
         ) {
-            Box(
-                modifier = Modifier.fillMaxSize()
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .align(Alignment.TopCenter)
+                    .padding(start = 18.dp, end = 18.dp)
+                    .verticalScroll(rememberScrollState())
             ) {
-                Column(
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .align(Alignment.TopCenter)
-                        .padding(start = 18.dp, end = 18.dp)
-                        .verticalScroll(rememberScrollState())
-                ) {
-                    ScreenTitle(text = stringResource(R.string.martin_osorio))
-                    ScreenSubTitle(text = stringResource(R.string.experience))
-                }
+                ScreenTitle(text = stringResource(R.string.martin_osorio))
+                ScreenSubTitle(text = "TODO")
             }
         }
     }
