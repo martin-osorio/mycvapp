@@ -23,6 +23,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.martinosorio.mycv.NavDestinations
 import com.martinosorio.mycv.R
+import com.martinosorio.mycv.ui.theme.LightGray
 
 @Composable
 fun ContentsScreen(
@@ -49,7 +50,7 @@ fun ContentsScreen(
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(bottom = 12.dp)
-                        .border(width = 2.dp, color = Color.LightGray, shape = RoundedCornerShape(8.dp))
+                        .border(width = 2.dp, color = LightGray, shape = RoundedCornerShape(8.dp))
                         .clickable {
                             navController.navigate(NavDestinations.SummaryScreen.destination)
                         },

@@ -14,10 +14,10 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import com.martinosorio.mycv.ui.theme.LightGray
 
 @Deprecated("Replace me")
 @Composable
@@ -70,8 +70,8 @@ fun ExperienceItem(
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .padding(bottom = 12.dp)
-            .border(width = 2.dp, color = Color.LightGray, shape = RoundedCornerShape(8.dp))
+            .padding(bottom = 15.dp)
+            .border(width = 2.dp, color = LightGray, shape = RoundedCornerShape(8.dp))
             .clickable {
                 // TODO: Navigate to ExperienceDetailScreen for this job
                 //navController.navigate(NavDestinations.SummaryScreen.destination)
