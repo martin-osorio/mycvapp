@@ -43,6 +43,10 @@ fun ExperiencesScreen(
                 // TODO: Get from a viewModel or cloud, then items{}
                 item {
                     ExperienceItem(
+                        onClick = {
+                            // TODO: Review after VM and Cloud changes
+                            navController.navigate(NavDestinations.ExperienceDetailScreen.destination)
+                        },
                         jobTitle = "Senior Android Developer",
                         companyName = "Abbott Laboratories",
                         location = "Remote",
@@ -71,6 +75,10 @@ fun ExperiencesScreen(
                 // TODO: Get from a viewModel or cloud
                 item {
                     ExperienceItem(
+                        onClick = {
+                            // TODO: Review after VM and Cloud changes
+                            navController.navigate(NavDestinations.ExperienceDetailScreen.destination)
+                        },
                         jobTitle = "Android Developer",
                         companyName = "CVS Health",
                         location = "Scottsdale, AZ",
@@ -95,6 +103,10 @@ fun ExperiencesScreen(
                 // TODO: Get from a viewModel or cloud
                 item {
                     ExperienceItem(
+                        onClick = {
+                            // TODO: Review after VM and Cloud changes
+                            navController.navigate(NavDestinations.ExperienceDetailScreen.destination)
+                        },
                         jobTitle = "Android Developer",
                         companyName = "Charles Schwab",
                         location = "Austin, TX",
@@ -113,6 +125,10 @@ fun ExperiencesScreen(
                 // TODO: Get from a viewModel or cloud
                 item {
                     ExperienceItem(
+                        onClick = {
+                            // TODO: Review after VM and Cloud changes
+                            navController.navigate(NavDestinations.ExperienceDetailScreen.destination)
+                        },
                         jobTitle = "Software Development Engineer in Test",
                         companyName = "Microsoft",
                         location = "Redmond, WA",

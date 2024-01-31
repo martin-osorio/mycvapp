@@ -15,6 +15,7 @@ import androidx.navigation.compose.rememberNavController
 import com.martinosorio.mycv.ui.ContactScreen
 import com.martinosorio.mycv.ui.ContentsScreen
 import com.martinosorio.mycv.ui.EducationScreen
+import com.martinosorio.mycv.ui.ExperienceDetailScreen
 import com.martinosorio.mycv.ui.ExperiencesScreen
 import com.martinosorio.mycv.ui.ResourcesScreen
 import com.martinosorio.mycv.ui.SkillsScreen
@@ -58,8 +59,13 @@ fun MyCVApp() {
                     ContentsScreen(navController = navController)
                 }
 
-                composable(NavDestinations.ExperienceScreen.destination) {
+                composable(NavDestinations.ExperiencesScreen.destination) {
                     ExperiencesScreen(navController = navController)
+                }
+
+                composable(NavDestinations.ExperienceDetailScreen.destination) {
+                    // TODO: Rework after creating VM
+                    ExperienceDetailScreen(navController = navController)
                 }
 
                 composable(NavDestinations.EducationScreen.destination) {

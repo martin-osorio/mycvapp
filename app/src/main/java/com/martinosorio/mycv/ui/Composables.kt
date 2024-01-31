@@ -58,6 +58,7 @@ fun ScreenSubTitle(text: String) {
 
 @Composable
 fun ExperienceItem(
+    onClick: () -> Unit,
     jobTitle: String,
     companyName: String,
     location: String,
@@ -73,8 +74,7 @@ fun ExperienceItem(
             .padding(bottom = 15.dp)
             .border(width = 2.dp, color = LightGray, shape = RoundedCornerShape(8.dp))
             .clickable {
-                // TODO: Navigate to ExperienceDetailScreen for this job
-                //navController.navigate(NavDestinations.SummaryScreen.destination)
+                onClick()
             },
     ) {
         Column(

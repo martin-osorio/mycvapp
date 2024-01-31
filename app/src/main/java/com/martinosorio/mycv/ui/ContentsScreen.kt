@@ -77,7 +77,7 @@ fun ContentsScreen(
                         .padding(bottom = 12.dp)
                         .border(width = 2.dp, color = Color.LightGray, shape = RoundedCornerShape(8.dp))
                         .clickable {
-                            navController.navigate(NavDestinations.ExperienceScreen.destination)
+                            navController.navigate(NavDestinations.ExperiencesScreen.destination)
                         },
                     horizontalArrangement = Arrangement.SpaceBetween,
                 ) {
