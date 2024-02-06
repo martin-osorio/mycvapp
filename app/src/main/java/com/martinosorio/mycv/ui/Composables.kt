@@ -14,9 +14,11 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import com.martinosorio.mycv.R
 import com.martinosorio.mycv.ui.theme.LightGray
 
 @Deprecated("Replace me")
@@ -54,6 +56,37 @@ fun ScreenSubTitle(text: String) {
         textAlign = TextAlign.Center,
         style = MaterialTheme.typography.headlineMedium
     )
+}
+
+@Composable
+fun ContentsItem(
+    itemTitle: String,
+    onClick: () -> Unit
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(bottom = 12.dp)
+            .border(width = 2.dp, color = LightGray, shape = RoundedCornerShape(8.dp))
+            .clickable {
+                onClick()
+            },
+        horizontalArrangement = Arrangement.SpaceBetween,
+    ) {
+        Text(
+            text = itemTitle,
+            modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, start = 16.dp),
+            textAlign = TextAlign.Start,
+            style = MaterialTheme.typography.headlineMedium
+        )
+
+        Text(
+            text = stringResource(R.string.right_carret),   // TODO: Replace with icon
+            modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, end = 16.dp),
+            textAlign = TextAlign.End,
+            style = MaterialTheme.typography.headlineMedium
+        )
+    }
 }
 
 @Composable

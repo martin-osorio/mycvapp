@@ -9,7 +9,7 @@
     <string name="tap_anywhere_to_continue">Tap anywhere to continue</string>
     <string name="summary_subtitle">Who am I?</string>
     <string name="contents_title">CV Contents</string>
-    <string name="contents_subtitle">Summary</string>
+    <string name="summary">Summary</string>
     <string name="right_carret"><![CDATA[>]]></string>
     <string name="experience">Experience</string>
     <string name="education">Education</string>
