@@ -390,3 +390,31 @@ fun CertificationItem(
         }
     }
 }
+
+@Composable
+fun SkillItem(
+    skill: String,
+    yearsOfExperience: String
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(bottom = 12.dp)
+            .border(width = 2.dp, color = LightGray, shape = RoundedCornerShape(8.dp)),
+        horizontalArrangement = Arrangement.SpaceBetween,
+    ) {
+        Text(
+            text = skill,
+            modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, start = 16.dp),
+            textAlign = TextAlign.Start,
+            style = MaterialTheme.typography.titleMedium
+        )
+
+        Text(
+            text = "$yearsOfExperience years",
+            modifier = Modifier.padding(top = 6.dp, bottom = 7.dp, end = 16.dp),
+            textAlign = TextAlign.End,
+            style = MaterialTheme.typography.titleMedium
+        )
+    }
+}

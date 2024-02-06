@@ -1,9 +1,9 @@
 package com.martinosorio.mycv.ui
 
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
@@ -25,27 +25,24 @@ fun EducationScreen(
         Box(
             modifier = Modifier.fillMaxSize()
         ) {
-            LazyColumn(
+            Column(
                 modifier = Modifier
                     .fillMaxSize()
                     .align(Alignment.TopCenter)
                     .padding(start = 18.dp, end = 18.dp)
             ) {
-                item {
-                    ScreenTitle(text = stringResource(R.string.martin_osorio))
-                    ScreenSubTitle(text = stringResource(R.string.education))
-                }
+                ScreenTitle(text = stringResource(R.string.martin_osorio))
 
-                item {
-                    EducationItem(
-                        institutionName = "Florida State University",
-                        degreeType = "Bachelor of Science",
-                        degreeSubject = "Computer Science",
-                        location = "Tallahassee, FL",
-                        startDate = "Fall 2010",
-                        endDate = "Spring 2014"
-                    )
-                }
+                ScreenSubTitle(text = stringResource(R.string.education))
+
+                EducationItem(
+                    institutionName = "Florida State University",
+                    degreeType = "Bachelor of Science",
+                    degreeSubject = "Computer Science",
+                    location = "Tallahassee, FL",
+                    startDate = "Fall 2010",
+                    endDate = "Spring 2014"
+                )
             }
         }
     }
