@@ -15,7 +15,7 @@ import androidx.navigation.NavController
 import com.martinosorio.mycv.R
 
 @Composable
-fun EducationScreen(
+fun CertificationsScreen(
     navController: NavController,
 ) {
     Surface(
@@ -33,17 +33,24 @@ fun EducationScreen(
             ) {
                 item {
                     ScreenTitle(text = stringResource(R.string.martin_osorio))
-                    ScreenSubTitle(text = stringResource(R.string.education))
+                    ScreenSubTitle(text = stringResource(R.string.certifications))
                 }
 
                 item {
-                    EducationItem(
-                        institutionName = "Florida State University",
-                        degreeType = "Bachelor of Science",
-                        degreeSubject = "Computer Science",
-                        location = "Tallahassee, FL",
-                        startDate = "Fall 2010",
-                        endDate = "Spring 2014"
+                    CertificationItem(
+                        certificationName = "Certified ScrumMaster (CSM)",
+                        institutionName = "Scrum Alliance",
+                        certificationId = "001406962",
+                        issueDate = "Sep 2022",
+                        expirationDate = "Aug 2024"
+                    )
+                }
+
+                item {
+                    CertificationItem(
+                        certificationName = "Android Security Maven\nGreen Belt",
+                        institutionName = "OWASP® Foundation",
+                        issueDate = "Sep 2022"
                     )
                 }
             }

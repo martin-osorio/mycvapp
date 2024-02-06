@@ -7,6 +7,7 @@ enum class NavDestinations(val destination: String) {
     ExperiencesScreen("ExperiencesScreen"),
     ExperienceDetailScreen("ExperienceDetailScreen"),
     EducationScreen("EducationScreen"),
+    CertificationsScreen("CertificationsScreen"),
     SkillsScreen("SkillsScreen"),
     ContactScreen("ContactScreen"),
     ResourcesScreen("LinksScreen"),

@@ -21,10 +21,7 @@ fun ExperiencesScreen(
 ) {
     Surface(
         modifier = Modifier.fillMaxSize(),
-        color = MaterialTheme.colorScheme.background,
-        onClick = {
-            navController.navigate(NavDestinations.ContentsScreen.destination)
-        }
+        color = MaterialTheme.colorScheme.background
     ) {
         Box(
             modifier = Modifier.fillMaxSize()

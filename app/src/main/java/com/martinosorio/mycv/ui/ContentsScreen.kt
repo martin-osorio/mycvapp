@@ -54,6 +54,11 @@ fun ContentsScreen(
                 )
 
                 ContentsItem(
+                    itemTitle = stringResource(R.string.certifications),
+                    onClick = { navController.navigate(NavDestinations.CertificationsScreen.destination) }
+                )
+
+                ContentsItem(
                     itemTitle = stringResource(R.string.skills),
                     onClick = { navController.navigate(NavDestinations.SkillsScreen.destination) }
                 )

@@ -205,3 +205,188 @@ fun ExperienceItem(
         }
     }
 }
+
+@Composable
+fun EducationItem(
+    institutionName: String,
+    degreeType: String,
+    degreeSubject: String,
+    location: String,
+    startDate: String,
+    endDate: String,
+    description: String = ""
+) {
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(bottom = 15.dp)
+            .border(width = 2.dp, color = LightGray, shape = RoundedCornerShape(8.dp))
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(top = 8.dp, bottom = 10.dp, start = 16.dp, end = 16.dp)
+        ) {
+            Text(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 8.dp),
+                textAlign = TextAlign.Center,
+                text = institutionName,
+                style = MaterialTheme.typography.titleLarge
+            )
+
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 6.dp),
+                horizontalArrangement = Arrangement.Start,
+            ) {
+                Text(
+                    text = degreeType,
+                    style = MaterialTheme.typography.titleMedium
+                )
+
+                Text(
+                    modifier = Modifier
+                        .padding(start = 6.dp, end = 6.dp),
+                    text = "-",
+                    style = MaterialTheme.typography.titleMedium
+                )
+
+                Text(
+                    text = degreeSubject,
+                    style = MaterialTheme.typography.titleMedium
+                )
+            }
+
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 6.dp),
+                horizontalArrangement = Arrangement.Start,
+            ) {
+                Text(
+                    text = startDate,
+                    style = MaterialTheme.typography.titleMedium
+                )
+
+                Text(
+                    modifier = Modifier
+                        .padding(start = 6.dp, end = 6.dp),
+                    text = "-",
+                    style = MaterialTheme.typography.titleMedium
+                )
+
+                Text(
+                    text = endDate,
+                    style = MaterialTheme.typography.titleMedium
+                )
+            }
+
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 8.dp),
+                horizontalArrangement = Arrangement.Start,
+            ) {
+                Text(
+                    text = location,
+                    style = MaterialTheme.typography.titleMedium
+                )
+            }
+
+            if (description.isNotEmpty()) {
+                Text(
+                    text = description,
+                    maxLines = 5,
+                    overflow = TextOverflow.Ellipsis,
+                    style = MaterialTheme.typography.titleSmall
+                )
+            }
+        }
+    }
+}
+
+@Composable
+fun CertificationItem(
+    certificationName: String,
+    institutionName: String,
+    certificationId: String = "",
+    issueDate: String,
+    expirationDate: String = ""
+) {
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(bottom = 15.dp)
+            .border(width = 2.dp, color = LightGray, shape = RoundedCornerShape(8.dp))
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(top = 8.dp, bottom = 10.dp, start = 16.dp, end = 16.dp)
+        ) {
+            Text(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 8.dp),
+                textAlign = TextAlign.Center,
+                text = certificationName,
+                style = MaterialTheme.typography.titleLarge
+            )
+
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 6.dp),
+                horizontalArrangement = Arrangement.Start,
+            ) {
+                Text(
+                    text = "From: $institutionName",
+                    style = MaterialTheme.typography.titleMedium
+                )
+            }
+
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 6.dp),
+                horizontalArrangement = Arrangement.Start,
+            ) {
+                Text(
+                    text = "Issued $issueDate",
+                    style = MaterialTheme.typography.titleMedium
+                )
+
+                if (expirationDate.isNotEmpty()) {
+                    Text(
+                        modifier = Modifier
+                            .padding(start = 6.dp, end = 6.dp),
+                        text = "-",
+                        style = MaterialTheme.typography.titleMedium
+                    )
+
+                    Text(
+                        text = "Expires $expirationDate",
+                        style = MaterialTheme.typography.titleMedium
+                    )
+                }
+            }
+
+            if (certificationId.isNotEmpty()) {
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(bottom = 8.dp),
+                    horizontalArrangement = Arrangement.Start,
+                ) {
+                    Text(
+                        text = "Certification ID: $certificationId",
+                        style = MaterialTheme.typography.titleMedium
+                    )
+                }
+            }
+        }
+    }
+}
